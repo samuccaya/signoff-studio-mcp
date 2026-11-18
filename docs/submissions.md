@@ -1,6 +1,12 @@
 # Registry and directory submissions
 
-Status: **prepared, nothing submitted.** Each submission needs the owner's OK, one at a time.
+Status (2026-11-19):
+- npm `@signoff-studio/mcp@26.8.41`: published (CI tag `mcp-v26.8.41`). npm also lists a `0.0.0-stage` placeholder from its first-publish processing.
+- Official MCP Registry `io.github.samuccaya/signoff-studio@26.8.41`: published, active.
+- GitHub release v26.8.41 with the .mcpb; Claude Code plugin marketplace = this repo.
+- awesome-mcp-servers: PR https://github.com/punkpeye/awesome-mcp-servers/pull/19978
+- mcp.so: issue https://github.com/chatmcp/mcpso/issues/7609
+- Open (need the owner's web login): Cursor directory, Smithery. Expected to pick up the registry/GitHub by themselves: GitHub MCP Registry, PulseMCP, Glama (check in a few days).
 Order matters: npm first (registries only hold metadata), then the official registry, then directories that read from it.
 
 ## Shared copy
