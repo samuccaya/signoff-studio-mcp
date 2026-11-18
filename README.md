@@ -30,7 +30,7 @@ Or register it yourself:
 | Claude Code plugin | `claude plugin marketplace add samuccaya/signoff-studio-mcp` then `claude plugin install signoff-studio@signoff-studio` (adds a verification skill and `/signoff-studio:verify`) |
 | Cursor | `.cursor/mcp.json`, see [examples/cursor](examples/cursor/mcp.json) |
 | VS Code | `.vscode/mcp.json`, see [examples/vscode](examples/vscode/mcp.json). The SignOff Studio extension registers the server automatically. |
-| Gemini CLI | `gemini mcp add signoff-studio npx -y @signoff-studio/mcp`, or [examples/gemini](examples/gemini/settings.json) |
+| Gemini CLI | `gemini mcp add signoff-studio npx -- -y @signoff-studio/mcp` (native Windows: `gemini mcp add signoff-studio cmd -- /c npx -y @signoff-studio/mcp`), or [examples/gemini](examples/gemini/settings.json) |
 | Desktop app (no Node) | `"<install>\QaSignOff.exe" --mcp-stdio`; Microsoft Store install: `signoff-mcp.exe`. Or use **Connect AI agents** in the app. |
 
 ## Tools
