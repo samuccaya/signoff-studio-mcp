@@ -1,0 +1,18 @@
+{
+  "name": "signoff-studio",
+  "description": "SignOff Studio plugins for Claude Code: local API and database verification.",
+  "owner": {
+    "name": "Samuccaya Tech LLP",
+    "url": "https://qasignoff.com"
+  },
+  "plugins": [
+    {
+      "name": "signoff-studio",
+      "source": "./plugins/signoff-studio",
+      "description": "Prove an API works and the database holds the right data, locally. MCP server (HTTP + SQL tools) and a verification skill.",
+      "version": "26.8.41",
+      "category": "testing",
+      "tags": ["api-testing", "database", "mcp", "verification"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "signoff-studio": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@signoff-studio/mcp"]
+    }
+  }
+}

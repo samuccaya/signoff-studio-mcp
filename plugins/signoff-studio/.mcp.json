@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "signoff-studio": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/signoff-mcp-launch.mjs"]
+    }
+  }
+}

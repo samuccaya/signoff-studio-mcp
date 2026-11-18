@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "signoff-studio": {
+      "command": "npx",
+      "args": ["-y", "@signoff-studio/mcp"]
+    }
+  }
+}

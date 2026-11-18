@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.samuccaya/signoff-studio",
+  "title": "SignOff Studio",
+  "description": "Local API and database verification for AI coding agents: HTTP checks and read-only SQL.",
+  "repository": {
+    "url": "https://github.com/samuccaya/signoff-studio-mcp",
+    "source": "github"
+  },
+  "version": "26.8.41",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@signoff-studio/mcp",
+      "version": "26.8.41",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "SIGNOFF_WORKSPACE",
+          "description": "SignOff Studio workspace folder, if it is not the agent's project folder",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        },
+        {
+          "name": "SIGNOFF_TELEMETRY",
+          "description": "Set to 0 to turn off anonymous usage counts",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

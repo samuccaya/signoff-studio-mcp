@@ -1,0 +1,13 @@
+{
+  "name": "signoff-studio",
+  "displayName": "SignOff Studio",
+  "version": "26.8.41",
+  "description": "Verify APIs and databases locally: call and assert HTTP endpoints, check rows read-only (PostgreSQL, MySQL, SQL Server, Oracle, SQLite), and save the checks into the repo. MCP server plus a verification skill.",
+  "author": {
+    "name": "Samuccaya Tech LLP",
+    "url": "https://qasignoff.com"
+  },
+  "homepage": "https://testapilocally.com/mcp",
+  "repository": "https://github.com/samuccaya/signoff-studio-mcp",
+  "keywords": ["api-testing", "database", "sql", "verification", "mcp", "postgres", "sqlite"]
+}
