@@ -28,7 +28,7 @@ Tag `mcp-v26.8.41` in qasignoff-backend runs `.github/workflows/publish-mcp.yml`
 
 ## 3. GitHub MCP Registry (VS Code `@mcp` gallery)
 
-Check at submission time whether it mirrors the official registry or needs its own submission (not confirmed yet).
+No separate submission. GitHub announced that servers self-published to the official MCP Registry appear in the GitHub MCP Registry automatically (github.blog, "Meet the GitHub MCP Registry", 2025-09; the github.com/mcp listing ids are official-registry names such as `io.github.owner/name`). Checked 2026-11-19: GitHub's docs give no other submission route. After step 2, check https://github.com/mcp?search=signoff and the VS Code Extensions view `@mcp signoff`; if it does not show within a few days, ask via GitHub Support.
 
 ## 4. Directories
 
