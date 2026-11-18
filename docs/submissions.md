@@ -1,12 +1,15 @@
 # Registry and directory submissions
 
 Status (2026-11-19):
-- npm `@signoff-studio/mcp@26.8.41`: published (CI tag `mcp-v26.8.41`). npm also lists a `0.0.0-stage` placeholder from its first-publish processing.
+- npm `@signoff-studio/mcp@26.8.41`: published (CI tag `mcp-v26.8.41`). The `0.0.0-stage` placeholder from the first publish was unpublished on 2026-11-19; `npm view @signoff-studio/mcp versions` shows only `26.8.41` (`latest`). Unpublish and deprecate need account 2FA (authenticator or passkey); the emailed login code is not accepted.
 - Official MCP Registry `io.github.samuccaya/signoff-studio@26.8.41`: published, active.
 - GitHub release v26.8.41 with the .mcpb; Claude Code plugin marketplace = this repo.
+- Cursor directory: live at https://cursor.directory/plugins/signoff-studio-mcp (found via the root `.mcp.json`; installs `npx -y @signoff-studio/mcp`).
 - awesome-mcp-servers: PR https://github.com/punkpeye/awesome-mcp-servers/pull/19978
 - mcp.so: issue https://github.com/chatmcp/mcpso/issues/7609
-- Open (need the owner's web login): Cursor directory, Smithery. Expected to pick up the registry/GitHub by themselves: GitHub MCP Registry, PulseMCP, Glama (check in a few days).
+- Smithery: skipped. smithery.ai now leads to Arcade's "Create MCP gateway" onboarding, which builds a private gateway from Arcade's own toolkits for remote tools. It is not a public directory and does not fit a local stdio server.
+- Expected to pick up the registry/GitHub by themselves (check around 2026-11-21/22): GitHub MCP Registry, PulseMCP, Glama.
+- Open: Claude Desktop extensions directory (section 5).
 Order matters: npm first (registries only hold metadata), then the official registry, then directories that read from it.
 
 ## Shared copy
@@ -40,8 +43,8 @@ No separate submission. GitHub announced that servers self-published to the offi
 
 | Directory | How | Notes |
 |---|---|---|
-| Cursor directory | Submit form on the site | Use the shared copy and the Cursor config from `examples/cursor`. |
-| Smithery | Add the server from the GitHub repo | Check whether local stdio servers need a `smithery.yaml`; the server needs no config to start. |
+| Cursor directory | Done: https://cursor.directory/plugins/signoff-studio-mcp | Submitted via "Auto (GitHub)"; the scanner reads the root `.mcp.json`. |
+| Smithery | Skipped | smithery.ai now leads to Arcade's gateway builder (remote tools only), not a directory. |
 | Glama | Usually indexes GitHub automatically; claim the listing | Glama runs checks on the repo; the server is a published npm package. |
 | PulseMCP | Submit form | Often picks up official-registry entries. |
 | mcp.so | Submit via the site (GitHub issue) | Shared copy. |
