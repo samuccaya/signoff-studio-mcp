@@ -51,6 +51,7 @@ Or register it yourself:
 | `import_requests` | Import OpenAPI, Postman, Insomnia, Bruno or cURL. |
 | `mock_server` | Start or stop a local mock API from a collection or spec. |
 | `export_evidence` | HTML/Markdown report plus JUnit, and a short summary for the PR. |
+| `send_feedback` | Send the SignOff Studio team a short note about the tool itself (bug, missing feature, idea); returns a known workaround if there is one. Never URLs, data or code. Off with `SIGNOFF_AGENT_FEEDBACK=0`. |
 
 Read tools carry `readOnlyHint`, so clients can approve them once. Response bodies and table rows are returned as data, never as instructions.
 
@@ -67,6 +68,18 @@ The agent's open folder (MCP roots), then walking up from the working folder for
 ## Telemetry
 
 Anonymous counts (which tools ran, error codes, which agent) help us fix confusing errors. No URLs, SQL, bodies or names are sent. Turn it off with `SIGNOFF_TELEMETRY=0` or `DO_NOT_TRACK=1`. Details: https://testapilocally.com/mcp#privacy
+
+## Privacy Policy
+
+Full policy: https://qasignoff.com/privacy and https://testapilocally.com/mcp#privacy. In short:
+- **Collected:**
+  - Anonymous usage counts: which agent connected, how the server was started, and each tool's outcome or error code, at most once a day per combination.
+  - When agent feedback is on, the short reports an agent writes about SignOff Studio itself (a bug, a missing feature, an idea), plus the product version, OS and the names and outcomes of recent tool calls. Reports that contain URLs, hostnames, emails, tokens, SQL, code, file paths or workspace secrets are refused before sending. Never request or response bodies, database rows, credentials or conversation content.
+- **Use and storage:** to fix bugs and decide what to build. Counts and reports are stored by the usage service (Cloudflare D1); reports are also filed in a private GitHub repository the SignOff Studio team triages. Not shared with or sold to third parties.
+- **Retention:** usage counts and feedback reports are deleted automatically after 18 months (a daily cleanup in the usage service).
+- **Your copy:** every feedback report is listed in `~/.signoff-studio/feedback/sent.jsonl`.
+- **Turning it off:** `SIGNOFF_AGENT_FEEDBACK=0` turns off feedback. `SIGNOFF_TELEMETRY=0` or `DO_NOT_TRACK=1` turns off both counts and feedback. The SignOff Studio app's Preferences has the same switches.
+- **Contact:** via https://qasignoff.com.
 
 ## Links
 
