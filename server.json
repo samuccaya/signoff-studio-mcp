@@ -7,13 +7,15 @@
     "url": "https://github.com/samuccaya/signoff-studio-mcp",
     "source": "github"
   },
-  "version": "26.8.41",
+  "version": "26.8.42",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@signoff-studio/mcp",
-      "version": "26.8.41",
-      "transport": { "type": "stdio" },
+      "version": "26.8.42",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "SIGNOFF_WORKSPACE",
@@ -25,6 +27,13 @@
         {
           "name": "SIGNOFF_TELEMETRY",
           "description": "Set to 0 to turn off anonymous usage counts",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        },
+        {
+          "name": "SIGNOFF_AGENT_FEEDBACK",
+          "description": "Set to 0 to turn off agent feedback (send_feedback)",
           "isRequired": false,
           "format": "string",
           "isSecret": false
