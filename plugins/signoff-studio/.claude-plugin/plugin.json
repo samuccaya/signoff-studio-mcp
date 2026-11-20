@@ -1,7 +1,7 @@
 {
   "name": "signoff-studio",
   "displayName": "SignOff Studio",
-  "version": "26.8.42",
+  "version": "26.8.43",
   "description": "Verify APIs and databases locally: call and assert HTTP endpoints, check rows read-only (PostgreSQL, MySQL, SQL Server, Oracle, SQLite), and save the checks into the repo. MCP server plus a verification skill.",
   "author": {
     "name": "Samuccaya Tech LLP",
