@@ -1,5 +1,7 @@
 # SignOff Studio MCP server
 
+[![samuccaya/signoff-studio-mcp MCP server](https://glama.ai/mcp/servers/samuccaya/signoff-studio-mcp/badges/score.svg)](https://glama.ai/mcp/servers/samuccaya/signoff-studio-mcp)
+
 Lets AI coding agents **prove an API works and that the database holds the right data**, on your machine.
 Works with Claude Code, Cursor, VS Code (Copilot agent mode), Gemini CLI, Claude Desktop and any other MCP client.
 
