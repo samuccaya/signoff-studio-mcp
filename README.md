@@ -60,6 +60,7 @@ Read tools carry `readOnlyHint`, so clients can approve them once. Response bodi
 ## Safety
 
 - SQL is read-only unless the owner ticks **Allow AI agent writes** on a connection. Production-tagged connections never accept agent writes.
+- HTTP writes (POST/PUT/PATCH/DELETE) to a staging or production environment are refused until you approve them: the agent gets `CONFIRMATION_REQUIRED`, asks you, and only then retries with `confirmWrite: true`. Environments are judged by name (and by the URLs they hold); the owner can add more hosts with `http.protectedHosts` in `.signoff/agent-policy.json`.
 - Database passwords come from the connection's password env key (workspace `.env` or the environment) or, for vault-only passwords, from the running SignOff Studio app. The model never sees them.
 - Every call is logged to `.signoff/agent-audit.jsonl` in the workspace (no secrets, no bodies).
 
