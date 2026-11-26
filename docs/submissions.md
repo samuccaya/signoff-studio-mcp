@@ -5,8 +5,10 @@ Status (2026-11-20):
 - Official MCP Registry `io.github.samuccaya/signoff-studio@26.8.43`: published, active. (`mcp-publisher login github --token "$(gh auth token)"` works when the saved token expired.)
 - GitHub release v26.8.43 with `signoff-studio-26.8.43.mcpb`; Claude Code plugin marketplace = this repo (26.8.43).
 - Cursor directory: live at https://cursor.directory/plugins/signoff-studio-mcp (root `.mcp.json`, runs npm `latest`).
-- awesome-mcp-servers: PR https://github.com/punkpeye/awesome-mcp-servers/pull/19978
-- mcp.so: issue https://github.com/chatmcp/mcpso/issues/7609
+- awesome-mcp-servers: PR https://github.com/punkpeye/awesome-mcp-servers/pull/19978 (2026-11-26: Glama badge added as the maintainer asked; waiting for review).
+- mcp.so: issue https://github.com/chatmcp/mcpso/issues/7609 (2026-11-26: no response yet).
+- Glama: listing claimed, rated A (19 tools); score badge in README.
+- Arcade: welcome email received after the Smithery redirect; no action needed (Arcade hosts remote tools, this server is local stdio).
 - Smithery: skipped (see below). Expected to pick up the registry/GitHub by themselves: GitHub MCP Registry, PulseMCP, Glama (check the listings show 26.8.43).
 - Open: Claude Desktop extensions directory (section 5).
 - Every release: follow qasignoff-backend `docs/RELEASE-CHECKLIST.md` §5.5–5.8; `npm run release:verify` checks npm, registry, release and plugin versions.
