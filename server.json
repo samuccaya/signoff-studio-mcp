@@ -7,12 +7,12 @@
     "url": "https://github.com/samuccaya/signoff-studio-mcp",
     "source": "github"
   },
-  "version": "26.8.43",
+  "version": "26.8.46",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@signoff-studio/mcp",
-      "version": "26.8.43",
+      "version": "26.8.46",
       "transport": {
         "type": "stdio"
       },
