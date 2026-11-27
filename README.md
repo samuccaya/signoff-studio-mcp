@@ -86,8 +86,10 @@ Full policy: https://qasignoff.com/privacy and https://testapilocally.com/mcp#pr
 
 ## Links
 
-- Docs and per-agent setup: https://testapilocally.com/mcp
-- SignOff Studio desktop app and VS Code extension: https://qasignoff.com
+- Docs and per-agent setup: [testapilocally.com/mcp](https://testapilocally.com/mcp/)
+- npm package: [@signoff-studio/mcp](https://www.npmjs.com/package/@signoff-studio/mcp)
+- SignOff Studio desktop app and VS Code extension: [qasignoff.com](https://qasignoff.com/)
 - Issues: https://github.com/samuccaya/signoff-studio-mcp/issues
+- App bug reports and discussions: [signoff-studio-support](https://github.com/samuccaya/signoff-studio-support)
 
 © Samuccaya Tech LLP. Free to use under the license in [LICENSE.txt](LICENSE.txt).
